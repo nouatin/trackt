@@ -1,0 +1,13 @@
+$color1: #4f4fff;
+
+$ss-size: 1.1rem;
+$s-size: 1.2rem;
+$bs-size: 1.4rem;
+$m-size: 1.6rem;
+$bm-size: 1.8rem;
+
+
+@mixin flex-spaceBetween {
+    display: flex;
+    justify-content: space-between;
+}

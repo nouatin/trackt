@@ -1,0 +1,88 @@
+@import '../base/setting';
+
+.sites{
+    .title{
+        background-color: $color1;
+        padding: 6px;
+        text-align: center;
+        color: white;
+        font-size: $m-size;
+        border-bottom: 2px solid black;
+    }
+    .searchLine{
+        @include flex-spaceBetween;
+        padding: 0 10px;
+        border-bottom: 1px solid black;
+        align-items: center;
+        .allSites{
+            @include flex-spaceBetween;
+            width: 120px;
+            font-weight: 600;
+        }
+        input{
+            height: 25px;
+            width: 250px;
+        }
+    }
+    .site{            
+        padding: 10px;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .imgInfo{
+            display: flex;
+            justify-content: flex-start;
+        }
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        .info{
+            margin-left: 10px;
+            margin-right: 5px;
+            .addr{
+                margin-top: 7px;
+                margin-bottom: 7px;
+            }
+        }
+    }
+    .details{
+        background-color: $color1;
+        justify-content: flex-start;
+        color: white;
+        .chevonL{
+            margin-right: 15px;
+            font-size: 18px;
+        }
+    }
+    .bCross{
+        svg{
+            width: 100vw;
+            height: 30vh;
+        }
+    }
+    .mainContact{
+        border-top: 2px solid gray;
+        padding: 10px;
+        .infoLine{
+            display: flex;
+            justify-content: flex-start;
+            padding: 20px 10px;
+            .jobTitle{
+                padding-top: 10px;
+                font-style: oblique;
+                font-size: $ss-size;
+            }
+            .infoImg{
+                font-size: $bm-size;
+                margin-right: $m-size;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}

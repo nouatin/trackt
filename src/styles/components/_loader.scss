@@ -1,0 +1,24 @@
+@import '../base/setting';
+
+.loader{
+    position: relative;
+    margin: 40vh auto;    
+    border: 10px solid rgb(43, 42, 42);
+    border-radius: 50%;
+    border-top: 10px solid $color1;
+    border-bottom: 10px solid $color1;
+    width: 75px;
+    height: 75px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}

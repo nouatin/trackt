@@ -1,0 +1,54 @@
+@import '../base/setting';
+
+.barMenu{
+    .barLine{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        background-color: #4f4fff;
+        border-bottom: 1px solid black;
+        font-size: $bm-size;
+        span{
+            color: white;
+            position: relative;
+            left: 4%;
+        }
+        button {
+            width: 23px;
+            border: 1px white;
+            border-radius: 15px;
+            background-color: white;
+            color: black;
+            font-size: 14px;
+            padding: 3px;            
+        }
+        div{
+            display: flex;
+            align-items: center;
+            width: 50px;
+            justify-content: space-between;
+        }
+    }       
+    .menu{
+        width: 200px;
+        height: 100vh;
+        background-color: $color1;
+        a{ 
+            display: block;
+            margin: 10px 25px;
+            color: white;
+            font-size: $bm-size;
+            &:hover{color: black;}
+        }
+        span {
+            position: relative;
+            left: 160px;
+            font-size: 36px;
+            color: white;
+            &:hover{
+                color: black;
+            }
+        }
+    }        
+}
